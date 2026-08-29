@@ -24,3 +24,4 @@ outputs/
 
 # Uncomment if you don't want to commit them
 data/
+models/*.pth

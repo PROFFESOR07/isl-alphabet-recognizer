@@ -1,6 +1,7 @@
 from src.model import create_model
 from src.transforms import val_transform
 from src.utils import get_device
+from collections import deque, Counter
 
 import torch
 import cv2
@@ -11,6 +12,8 @@ import mediapipe as mp
 
 PROJECT_ROOT = Path(__file__).parent.parent
 MODEL_PATH = PROJECT_ROOT / "models" / "best_model.pth"
+
+CONFIDENCE_THRESHOLD = 0.80
 
 device = get_device()
 mp_drawing = mp.solutions.drawing_utils
@@ -47,6 +50,9 @@ def webcam():
     model = load_model()
     prediction = "No Hand"
     confidence = 0.0
+
+    prediction_history = deque(maxlen=5)
+    
     cap = cv2.VideoCapture(0)
     if not cap.isOpened():
         print("Failed to open webcam.")
@@ -118,6 +124,17 @@ def webcam():
             image = Image.fromarray(cropped)
 
             prediction, confidence = predict_image(model, image)
+
+            print(prediction, confidence)
+
+            if confidence >= CONFIDENCE_THRESHOLD:
+                prediction_history.append(prediction)
+
+            if prediction_history:
+                prediction = Counter(prediction_history).most_common(1)[0][0]
+            else:
+                prediction = "Unknown"
+
             cv2.imshow("Crop", cv2.cvtColor(cropped, cv2.COLOR_RGB2BGR))
 
         cv2.putText(

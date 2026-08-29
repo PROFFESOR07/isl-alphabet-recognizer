@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 280" fill="none">
+  <defs>
+    <radialGradient id="divine-halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff5cc" stop-opacity="1"/>
+      <stop offset="35%" stop-color="#f5cf68" stop-opacity="0.85"/>
+      <stop offset="70%" stop-color="#b8860b" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#06122c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="krishna-skin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#70a6ff"/>
+      <stop offset="50%" stop-color="#2d6cdf"/>
+      <stop offset="100%" stop-color="#103783"/>
+    </linearGradient>
+    <linearGradient id="gold-ornament" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff4b8"/>
+      <stop offset="40%" stop-color="#f5cf68"/>
+      <stop offset="100%" stop-color="#aa7406"/>
+    </linearGradient>
+    <filter id="divine-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Luminous Golden Aura Halo -->
+  <circle cx="120" cy="115" r="95" fill="url(#divine-halo)"/>
+  
+  <!-- Aura Rays -->
+  <g stroke="url(#gold-ornament)" stroke-width="1.2" opacity="0.65" stroke-dasharray="4 6">
+    <circle cx="120" cy="115" r="82"/>
+    <circle cx="120" cy="115" r="70"/>
+  </g>
+
+  <!-- Lord Krishna's Celestial Mukut (Crown) -->
+  <path d="M92 78 L120 28 L148 78 Q120 72 92 78 Z" fill="url(#gold-ornament)" stroke="#ffd700" stroke-width="1.5" filter="url(#divine-glow)"/>
+  <circle cx="120" cy="48" r="4.5" fill="#ff1744" stroke="#ffffff" stroke-width="1"/>
+  <circle cx="106" cy="68" r="3" fill="#00e5ff"/>
+  <circle cx="134" cy="68" r="3" fill="#00e5ff"/>
+
+  <!-- Holy Peacock Feather in Mukut (Mor Pankh) -->
+  <g transform="translate(10, -5)">
+    <path d="M128 32 Q148 5 158 -8" stroke="#d4af37" stroke-width="2" stroke-linecap="round"/>
+    <!-- Outer Green/Gold Feather Plume -->
+    <ellipse cx="158" cy="-5" rx="14" ry="24" transform="rotate(35 158 -5)" fill="#008055" stroke="#ffd700" stroke-width="1.5" filter="url(#divine-glow)"/>
+    <!-- Inner Cyan Aura -->
+    <ellipse cx="158" cy="-5" rx="9" ry="16" transform="rotate(35 158 -5)" fill="#00e5ff" stroke="#ffd700" stroke-width="1"/>
+    <!-- Blue/Navy Heart Core -->
+    <circle cx="159" cy="-5" r="6" fill="#0a1d4d"/>
+    <circle cx="161" cy="-7" r="2.2" fill="#ffd700"/>
+  </g>
+
+  <!-- Crown Base Band -->
+  <path d="M88 76 C105 84 135 84 152 76 L154 84 C135 92 105 92 86 84 Z" fill="url(#gold-ornament)" stroke="#d4af37" stroke-width="1.2"/>
+
+  <!-- Divine Face Contour -->
+  <path d="M96 85 C88 110 92 145 120 162 C148 145 152 110 144 85 Z" fill="url(#krishna-skin)" stroke="#f5cf68" stroke-width="1.2" filter="url(#divine-glow)"/>
+
+  <!-- Tilak (Chandan Urdhva Pundra & Kumkum) -->
+  <path d="M115 84 C115 106 125 106 125 84" stroke="#ffffff" stroke-width="2.2" fill="none"/>
+  <line x1="120" y1="88" x2="120" y2="110" stroke="#ff1744" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="120" cy="115" r="1.8" fill="#ffd700"/>
+
+  <!-- Serene Lotus Eyes & Gentle Eyebrows -->
+  <path d="M100 108 Q109 103 116 109" stroke="#051036" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M124 109 Q131 103 140 108" stroke="#051036" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+  <path d="M102 114 Q108 120 115 114 Q108 111 102 114 Z" fill="#ffffff"/>
+  <circle cx="109" cy="114" r="2.8" fill="#1b2a47"/>
+  <circle cx="110" cy="113" r="1" fill="#ffffff"/>
+
+  <path d="M125 114 Q132 120 138 114 Q132 111 125 114 Z" fill="#ffffff"/>
+  <circle cx="131" cy="114" r="2.8" fill="#1b2a47"/>
+  <circle cx="132" cy="113" r="1" fill="#ffffff"/>
+
+  <!-- Divine Gentle Smile -->
+  <path d="M116 138 Q120 143 124 138" stroke="#ff4081" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+  <!-- Kundal (Golden Earrings) -->
+  <path d="M86 115 C80 125 80 135 88 140 C92 135 90 120 86 115 Z" fill="url(#gold-ornament)" stroke="#ffd700" stroke-width="1"/>
+  <path d="M154 115 C160 125 160 135 152 140 C148 135 150 120 154 115 Z" fill="url(#gold-ornament)" stroke="#ffd700" stroke-width="1"/>
+
+  <!-- Golden Bansuri (Flute) across chest -->
+  <g transform="rotate(-18 120 200)">
+    <rect x="35" y="196" width="170" height="12" rx="6" fill="url(#gold-ornament)" stroke="#ffe57f" stroke-width="1.8" filter="url(#divine-glow)"/>
+    <!-- Flute Tone Holes -->
+    <circle cx="95" cy="202" r="2" fill="#3e2723"/>
+    <circle cx="115" cy="202" r="2" fill="#3e2723"/>
+    <circle cx="135" cy="202" r="2" fill="#3e2723"/>
+    <circle cx="155" cy="202" r="2" fill="#3e2723"/>
+    <circle cx="175" cy="202" r="2" fill="#3e2723"/>
+    <!-- Flute Silk Tassels -->
+    <path d="M42 205 Q35 220 30 235" stroke="#ff1744" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="30" cy="237" r="3.5" fill="#ffd700"/>
+    <path d="M48 205 Q44 222 42 238" stroke="#ffea00" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Divine Lotus Garland (Vaijayanti Mala) -->
+  <path d="M85 160 C95 210 145 210 155 160" stroke="url(#gold-ornament)" stroke-width="4" stroke-linecap="round" fill="none" stroke-dasharray="6 3"/>
+</svg>

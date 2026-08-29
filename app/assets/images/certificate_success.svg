@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 180" fill="none">
+  <defs>
+    <linearGradient id="parchment" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8e7"/>
+      <stop offset="50%" stop-color="#faecc5"/>
+      <stop offset="100%" stop-color="#edd59c"/>
+    </linearGradient>
+    <linearGradient id="gold-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#f5cf68"/>
+      <stop offset="100%" stop-color="#996515"/>
+    </linearGradient>
+    <filter id="cert-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Parchment Scroll Body -->
+  <rect x="35" y="20" width="150" height="135" rx="10" fill="url(#parchment)" stroke="url(#gold-border)" stroke-width="2.5" filter="url(#cert-glow)"/>
+  
+  <!-- Inner Elegant Border Frame -->
+  <rect x="42" y="27" width="136" height="121" rx="6" fill="none" stroke="#d4af37" stroke-width="1.2" stroke-dasharray="4 2"/>
+
+  <!-- Scroll Top Heading & Lines -->
+  <path d="M70 42 H150" stroke="#b8860b" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M55 58 H165" stroke="#a68438" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M55 70 H165" stroke="#a68438" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M55 82 H140" stroke="#a68438" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M55 94 H155" stroke="#a68438" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Golden Wax Seal & Ribbons (Bottom Right) -->
+  <g transform="translate(142, 118)">
+    <!-- Silk Ribbons -->
+    <path d="M-8 10 L-14 36 L0 28 L14 36 L8 10 Z" fill="#ff1744"/>
+    <!-- Royal Medal Wax Stamp -->
+    <circle cx="0" cy="0" r="16" fill="url(#gold-border)" stroke="#ffd700" stroke-width="2" filter="url(#cert-glow)"/>
+    <!-- Peacock Feather Stamp Emblem -->
+    <circle cx="0" cy="0" r="10" fill="#0c204c"/>
+    <circle cx="0" cy="0" r="4.5" fill="#38ef7d"/>
+  </g>
+
+  <!-- Green Verified Check Badge (Top Left Corner) -->
+  <g transform="translate(45, 22)">
+    <circle cx="0" cy="0" r="14" fill="#10b981" stroke="#ffffff" stroke-width="2.5" filter="url(#cert-glow)"/>
+    <path d="M-5 0 L-1 4 L6 -4" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Golden Stars of Honor -->
+  <path d="M110 112 L112 106 L114 112 L120 114 L114 116 L112 122 L110 116 L104 114 Z" fill="#d4af37"/>
+</svg>
